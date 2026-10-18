@@ -13,10 +13,10 @@ export const getAllCoins = createAsyncThunk(
   "coins/getAllCoins",
   async (_, { getState }) => {
     try {
-      // const response = await axios.get(
-      //   "https://kimkidbackend.vercel.app/api/coins",
-      // );
-      const response = await axios.get("http://localhost:5000/api/coins");
+      const response = await axios.get(
+        "https://kimkidbackend.vercel.app/api/coins",
+      );
+      // const response = await axios.get("http://localhost:5000/api/coins");
 
       const transaction = getState().transaction.transactions;
 
