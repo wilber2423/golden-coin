@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import TrustLogoImg from "../../../../assets/registration/logo.svg";
+import TrustLogoImg from "../../../../assets/registration/logo.png";
 import { MdPhoneAndroid } from "react-icons/md";
 import { PiCheckBold } from "react-icons/pi";
 import { useState } from "react";
@@ -10,9 +10,9 @@ const RegisterPage1 = ({ setIsCreatAcc }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="">
-      <div className="w-[266px] mb-16">
-        <Link to="https://trustwallet.com/">
+    <div className=" ">
+      <div className="w-[266px] mb-16 ">
+        <Link to="https://cgoasset.com/services-9">
           <img src={TrustLogoImg} alt="" className="rounded-none" />
         </Link>
       </div>
@@ -27,7 +27,7 @@ const RegisterPage1 = ({ setIsCreatAcc }) => {
             "w-5 h-5 shrink-0 border-[2px] rounded-md  items-center flex justify-center cursor-pointer",
             isChecked
               ? "text-white bg-customBlue-100 border-none"
-              : "border-customGray-200 border-opacity-30"
+              : "border-customGray-200 border-opacity-30",
           )}
           onClick={() => setIsChecked((prev) => !prev)}
         >
@@ -35,17 +35,11 @@ const RegisterPage1 = ({ setIsCreatAcc }) => {
         </p>
         <p>
           I have read and agree to the{" "}
-          <Link
-            to="https://trustwallet.com/terms-of-service"
-            className="text-customBlue-100"
-          >
+          <Link to="https://cgoasset.com/legal" className="text-customBlue-100">
             Terms of Use
           </Link>{" "}
           and{" "}
-          <Link
-            to="https://trustwallet.com/privacy-notice"
-            className="text-customBlue-100"
-          >
+          <Link to="https://cgoasset.com/legal" className="text-customBlue-100">
             Privacy Policy
           </Link>{" "}
         </p>
@@ -56,7 +50,7 @@ const RegisterPage1 = ({ setIsCreatAcc }) => {
             "w-full text-white font-bold rounded-full h-[52px]",
             isChecked
               ? "cursor-pointer bg-customBlue-100"
-              : "bg-customBlue-100 bg-opacity-50  cursor-not-allowed"
+              : "bg-customBlue-100 bg-opacity-50  cursor-not-allowed",
           )}
           onClick={() => isChecked && navigate("/login")}
         >
@@ -68,7 +62,7 @@ const RegisterPage1 = ({ setIsCreatAcc }) => {
             "w-full  font-bold rounded-full h-[52px]",
             isChecked
               ? "cursor-pointer bg-customGray-200 bg-opacity-10 text-customGray-200 text-opacity-60"
-              : "bg-customGray-200 bg-opacity-[0.05] text-customGray-200 cursor-not-allowed text-opacity-30"
+              : "bg-customGray-200 bg-opacity-[0.05] text-customGray-200 cursor-not-allowed text-opacity-30",
           )}
           onClick={() => isChecked && setIsCreatAcc(true)}
         >

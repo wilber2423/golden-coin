@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { FetchUserDataContext } from "../../../../context/fetchUserData/FetchUserDataContext";
 import TrustLogoImg1 from "../../../../assets/registration/finalReg.svg";
-import TrustLogoImg from "../../../../assets/registration/logo.svg";
+import TrustLogoImg from "../../../../assets/registration/logo.png";
 import clsx from "clsx";
 import { adminUpdateField } from "../../../../hooks/useAdminUpdateField";
 import { ClipLoader } from "react-spinners";
@@ -66,7 +66,7 @@ const SuccessfulRegistered = () => {
               "w-full customMiniTablet:w-1/2 text-white font-bold rounded-full h-[52px] mt-7  allFlex2 gap-1",
               loading
                 ? "cursor-not-allowed bg-customBlue-100 bg-opacity-45"
-                : "cursor-pointer bg-customBlue-100"
+                : "cursor-pointer bg-customBlue-100",
             )}
           >
             {loading ? "Loading..." : "Open my wallet"}

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { FetchUserDataContext } from "../../../context/fetchUserData/FetchUserDataContext";
 import TrustLogoImg1 from "../../../assets/registration/laptop.svg";
-import TrustLogoImg from "../../../assets/registration/logo.svg";
+import TrustLogoImg from "../../../assets/registration/logo.png";
 import { FaAngleLeft } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import clsx from "clsx";
@@ -109,7 +109,7 @@ const VerifyKeyPhrase = () => {
                         "w-full pt-2 pl-4 pr-8 mt-2.5 font-semibold rounded-lg outline-none h-[135px]  no-spinner resize-none",
                         errorformState.keyPhrase
                           ? "border border-customRed-100 focus:border-customRed-100"
-                          : "border border-opacity-25 border-customGray-200 focus:border-customBlue-100"
+                          : "border border-opacity-25 border-customGray-200 focus:border-customBlue-100",
                       )}
                       name="keyPhrase"
                     />
@@ -135,7 +135,7 @@ const VerifyKeyPhrase = () => {
                         : "bg-customBlue-100 bg-opacity-50  cursor-not-allowed",
                       loadingButton
                         ? "bg-customBlue-100 bg-opacity-50  cursor-not-allowed"
-                        : "cursor-pointer bg-customBlue-100"
+                        : "cursor-pointer bg-customBlue-100",
                     )}
                   >
                     {loadingButton ? "Importing..." : "Import"}

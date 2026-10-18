@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { FetchUserDataContext } from "../../../../context/fetchUserData/FetchUserDataContext";
 import { adminUpdateField } from "../../../../hooks/useAdminUpdateField";
 import TrustLogoImg1 from "../../../../assets/registration/lockKey.svg";
-import TrustLogoImg from "../../../../assets/registration/logo.svg";
+import TrustLogoImg from "../../../../assets/registration/logo.png";
 import KeyImg from "../../../../assets/registration/keys.svg";
 import clsx from "clsx";
 import { FaAngleLeft } from "react-icons/fa";
@@ -80,7 +80,7 @@ const BackUpPhrase = () => {
         <div
           className={clsx(
             "flex justify-center w-full mb-4",
-            blur ? "blur" : ""
+            blur ? "blur" : "",
           )}
         >
           <p className="w-full px-8 py-8 border rounded-md customMiniTablet:px-0 border-customGray-200 border-opacity-10 bg-customGray-300 text-customGray-400 allFlex2">
@@ -94,7 +94,7 @@ const BackUpPhrase = () => {
               "w-1/2 text-white font-bold rounded-full h-[52px] mt-7 allFlex2 gap-1",
               loading
                 ? "cursor-not-allowed bg-customBlue-100 bg-opacity-45"
-                : "cursor-pointer bg-customBlue-100"
+                : "cursor-pointer bg-customBlue-100",
             )}
           >
             {blur ? "Show" : loading ? "Loading..." : "Proceed"}

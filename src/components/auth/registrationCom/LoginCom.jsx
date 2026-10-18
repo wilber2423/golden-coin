@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import LogoImg from "../../../assets/registration/plainLogo.svg";
+import LogoImg from "../../../assets/registration/logo.png";
 import LoginPageForm from "./login/LoginPageForm";
 
 const LoginCom = () => {
   return (
     <div className="flex-col h-screen px-4 allFlex2">
       <div className="flex-col mb-5 allFlex2">
-        <div className="w-[58px] mb-4">
+        <div className="w-[108px] mb-4">
           <img src={LogoImg} alt="" className="object-cover rounded-none" />
         </div>
         <p className="font-bold text-center">

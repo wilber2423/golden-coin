@@ -1,4 +1,4 @@
-import TrustLogoImg from "../../../../../assets/registration/logo.svg";
+import TrustLogoImg from "../../../../../assets/registration/logo.png";
 import TrustLogoImg1 from "../../../../../assets/registration/registerLogo1.svg";
 import RegisterPageForm from "./RegisterPageForm";
 
